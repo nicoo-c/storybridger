@@ -1,0 +1,79 @@
+/* Estilo para la tabla */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Estilo para las celdas de encabezado */
+th {
+    background-color: #f5f5f5;
+    color: #333;
+    font-weight: bold;
+    td {
+        padding: 4px;
+        margin: 2px; /* Adjust the margin value as per your requirement */
+        border: 1px solid #ccc;
+    }
+    text-align: center;
+    border: 2px solid #ccc;
+}
+
+/* Estilo para las celdas de datos */
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo para las filas alternas */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+
+}
+
+/* Estilo para eliminar */
+button {
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo para el botón de actualización */
+.button-actualizar {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Estilo para el botón de eliminación */
+.button-eliminar {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Estilo para el botón de creación */
+.button-crear {
+    background-color: #2ecc71;
+    color: black;
+    width: 5%;
+    padding: 7px;
+    
+}
+
+form input,
+form select,
+form textarea {
+    width: 50%;
+    padding: 4px; /* Ajusta el relleno (padding) para aumentar el tamaño */
+    margin: 4px ;
+    box-sizing: border-box;
+}

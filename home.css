@@ -1,0 +1,159 @@
+/* Reset some default styles */
+body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    position: relative; /* Add relative positioning */
+    padding: 20px 0;
+}
+
+header .logo img {
+    width: 120px;
+    height: auto;
+    position: absolute; /* Add absolute positioning */
+    top: 10px;
+    left: 10px;
+    z-index: 1; /* To ensure it's above other content */
+}
+
+nav ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.user {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.user a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.main {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1; /* To ensure it's above other content */
+}
+
+.search-bar {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search-bar input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 20px; /* Agregar un margen en la parte superior */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.item {
+    /* ... otros estilos ... */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; /* Tamaño máximo para las imágenes */
+    margin: auto; /* Centrar horizontalmente */
+    display: block; /* Ajuste para la alineación vertical */
+}
+
+
+.item h2 {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas (ejemplo: menos de 768px) */
+    .content {
+        grid-template-columns: 1fr; /* Cambiar a una columna en pantallas más pequeñas */
+    }
+
+    .item {
+        width: 100%; /* O el tamaño deseado para ocupar toda la pantalla */
+        padding: 10px; /* Reducir el relleno */
+    }
+
+    .item img {
+        max-height: 60px; /* Tamaño máximo para las imágenes en pantallas más pequeñas */
+    }
+}
+
+@media (min-width: 768px) {
+    /* Para pantallas más grandes (ejemplo: más de 768px) */
+    .content {
+        grid-template-columns: repeat(4, 1fr); /* Mostrar tres columnas */
+    }
+}
