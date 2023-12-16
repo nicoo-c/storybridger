@@ -1,0 +1,21 @@
+generador de listados
+
+- listado busqueda obras
+- listado categorias favoritas
+- listado obras recomendadas
+- listado obras favoritas
+
+gestión de sugerencias
+
+mantenedor de tablas base // LISTO
+- tipos de obra
+- plataforma
+
+
+control de acceso // LISTO
+
+autorregistro // LISTO
+
+gestión de favoritos
+
+calificación categorías (opcional)
